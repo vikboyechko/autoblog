@@ -1,5 +1,7 @@
 # Autoblog: AI Content Pipeline for Claude Code
 
+> 📖 **Full writeup on the autoblogging pipeline, with an example, at [vikboyechko.com/blog/autoblogging-with-claude-code](https://vikboyechko.com/blog/autoblogging-with-claude-code)**
+
 An automated SEO blog content pipeline that runs inside [Claude Code](https://docs.anthropic.com/en/docs/claude-code). Claude follows a step-by-step playbook (`PIPELINE.md`) to research keywords, write articles, generate images, and send them for human review.
 
 Built for static sites (Eleventy, Hugo, Astro, etc.) with blog posts as markdown files.

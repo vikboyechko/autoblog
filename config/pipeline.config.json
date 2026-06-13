@@ -1,0 +1,73 @@
+{
+  "site": {
+    "domain": "example.com",
+    "name": "Your Product Name",
+    "niche": "your product niche or category",
+    "productDescription": "One-sentence description of what your product does",
+    "seedPillars": {
+      "core": ["primary keyword 1", "primary keyword 2"],
+      "features": ["feature keyword 1", "feature keyword 2"],
+      "use cases": ["use case keyword 1", "use case keyword 2"]
+    },
+    "productFeatures": [
+      "feature 1",
+      "feature 2",
+      "feature 3"
+    ]
+  },
+  "paths": {
+    "blogDir": "src/content/blog",
+    "imagesDir": "src/assets/images/blog",
+    "writingStyleFile": "autoblog/config/writing-style.md",
+    "imageGenScript": "autoblog/scripts/generate-blog-images.js",
+    "exampleImagesDir": "autoblog/config/example-images"
+  },
+  "imageStyle": "New Yorker magazine style illustration. Very colorful color palette. No text or words in the image. Abstract or conceptual representation of the topic. 16:9 aspect ratio.",
+  "seo": {
+    "targetWordCount": { "min": 1200, "max": 2500 },
+    "minInternalLinks": 3,
+    "maxInternalLinks": 8,
+    "minExternalLinks": 2,
+    "maxExternalLinks": 5,
+    "minH2Headings": 4,
+    "maxH2Headings": 6
+  },
+  "research": {
+    "batchSize": 10,
+    "maxKeywordDifficulty": 40,
+    "minSearchVolume": 50,
+    "locationCode": 2840,
+    "languageCode": "en",
+    "suggestionsPerSeed": 50,
+    "minProductRelevance": 0.2,
+    "dynamicSeeds": {
+      "enabled": true,
+      "fromCompleted": true,
+      "fromBlogFrontmatter": true,
+      "maxDynamicSeeds": 15
+    },
+    "scoring": {
+      "volumeDifficultyWeight": 0.35,
+      "cpcWeight": 0.15,
+      "intentBonus": {
+        "commercial": 1.5,
+        "transactional": 1.3,
+        "informational": 1.0,
+        "navigational": 0.5
+      },
+      "trendMomentumWeight": 0.15,
+      "productRelevanceWeight": 0.20,
+      "competitionPenalty": {
+        "HIGH": 0.6,
+        "MEDIUM": 0.85,
+        "LOW": 1.0,
+        "UNKNOWN": 0.9
+      }
+    },
+    "clustering": {
+      "enabled": true,
+      "similarityThreshold": 0.4,
+      "maxPerCluster": 2
+    }
+  }
+}

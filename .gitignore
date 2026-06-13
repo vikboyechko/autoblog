@@ -1,0 +1,18 @@
+# Secrets
+.env
+service-account-key.json
+*.pem
+
+# Runtime state (alongside the review watcher)
+scripts/.processed-uids.json
+scripts/.review-map.json
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+claude.md
+.claude
